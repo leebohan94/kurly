@@ -1,0 +1,244 @@
+
+#wrap {
+   width:100%;
+   #main {
+      position: relative;
+      z-index: 2;
+      #section1 {
+         width:100%;
+         padding:0 0 40px 0;
+         .slide-container {
+            position: relative;
+            width:100%;
+            max-width:1903px;
+            margin:0 auto;
+            cursor: pointer;
+            user-select: none;
+            .slide-view {
+               z-index: 1; 
+               position: relative;
+               width:100%;
+               overflow: hidden;
+               .slide-wrap { //애니메이션 대상
+                  position: relative;
+                  width: 100% * 22;
+                  left: 0;    // 첫번째 슬라이드 
+                  // left: -100% * 1; // 두번째 슬라이드 
+                  // left: -100% * 2;
+                  // left: -100% * 3;
+                  margin-left:-100%;  // 마지막 슬라이드 한칸 뒤로 보낸다.
+                  display: flex;
+                  .slide {
+                     width:100%;
+                     a {
+                        display:block;
+                        width:100%;
+                        pointer-events: none;
+                        img {
+                           width:100%;
+                        }
+                     }
+                  }
+               }
+            }
+
+            .arrow {
+               display: none;
+               width:52px;
+               height:52px;
+               margin-top:-26px;
+               position: absolute;
+               top:50%;
+               z-index: 2; 
+               &.arrow-left-box{
+                  left:16%;
+                  transform: rotate(180deg);                  
+               }              
+               &.arrow-right-box{
+                  right:16%;
+               }              
+               a {
+                  display: block;
+                  width:100%;
+                  height:100%;                  
+                  i {
+                     width:100%;
+                     height:100%;                  
+                     display: block;
+                     background: url(../img/slide_arrow.svg) no-repeat 50% 50%;
+                     background-size: 52px 52px;
+                  }
+               }
+            }
+
+            .page-box {
+               z-index: 2;
+               position: absolute;
+               bottom: 20px;
+               right: 28%;
+               padding:4px 10px 5px 10px;
+               border-radius: 12px;
+               background: rgba(0,0,0, 0.3);
+               user-select: none;
+               em {
+                  font-size:14px;
+                  font-weight: 500;
+                  color:rgba(255,255,255, 0.8);
+               }
+               i {
+                  font-size:14px;
+                  font-weight: 500;
+                  color:#fff;
+               }
+            }
+         }
+         
+      }
+      // 인트로 섹션 공통 슬라이드
+      .section-slide-public {
+         width:100%;   
+         padding:40px 0;     
+         background-color: #fff;
+         .title{
+            text-align: center;
+            padding:0 0 40px 0;
+            h2 {
+               color:#333;
+               font-weight: 500;
+               font-size: 28px;
+            }
+         }
+         .slide-container {
+            width:1068px;
+            margin: 0 auto;
+            position: relative;
+            user-select: none;
+            cursor: pointer;
+            .slide-view {
+               width:100%;
+               overflow: hidden;
+               position: relative;
+               z-index: 1;
+               .slide-wrap {
+                  width:100% * 5; // chd 4*5개 (20개)
+                  display: flex;
+                  position: relative;
+                  //애니메이션 대상은 반드시 포인터 이벤트 : 사용안함
+                  pointer-events: none;
+                  .slide {
+                     width:25%;
+                     .gap {
+                        margin:0 9px;
+                        .img-box {
+                           width:100%;
+                           a {
+                              display: block;
+                              width:100%;
+                              position: relative;
+                              overflow: hidden;
+                              > img {
+                                 width:100%;
+                                 position: relative;
+                                 z-index: 1;
+                                 transition: all 0.5s;
+                                 &:hover {
+                                    transform: scale(1.05);
+                                 }
+                              }
+                              > span {
+                                 z-index: 2;
+                                 position: absolute;
+                                 bottom: 15px;
+                                 right: 20px;
+                                 width:45px;
+                                 height:45px;
+                                 img {
+                                    width:100%;
+                                 }
+                              }
+                           }
+                        }
+                        .caption-box {
+                           padding:20px 0;
+                           h2 {
+                              font-size: 16px;
+                              color:#333;
+                              line-height: 140%;
+                           }
+                           h3 {
+                              font-size: 16px;
+                              padding:10px 0 5px 0;
+                              strong {
+                                 color:#fa622f;
+                                 margin:0 10px 0 0;
+                              }
+                              em {                                 
+                                 color:#333;
+                                 font-weight: 600;
+                              }
+                           }
+                           h4 {
+                              s {
+                                 color:#999;
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+
+            .arrow-btn {
+               position: absolute;
+               top: 50%;
+               margin-top:-90px;
+               width:60px;
+               height:60px;
+               z-index: 2;
+               &.arrow-right {
+                  right: -21px;
+                  transform: rotate(180deg);
+               }
+               &.arrow-left {
+                  left: -21px;
+               }
+               img {
+                  width: 100%;
+               }
+            }
+         }
+      }
+      #section3 {
+         width:100%;
+         padding:40px 0;
+         .container {
+            width:1068px;
+            margin:0 auto;
+            padding:0 9px;            
+            a {
+               display: block;
+               width: 100%;
+               img {
+                  width:100%;
+               }
+            }
+         }
+      }
+      #section5 {
+         width:100%;
+         padding:40px 0;
+         .container {
+            width:1068px;
+            margin:0 auto;
+            padding:0 9px;            
+            a {
+               display: block;
+               width: 100%;
+               img {
+                  width:100%;
+               }
+            }
+         }
+      }
+   }
+}

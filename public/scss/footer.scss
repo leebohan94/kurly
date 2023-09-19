@@ -1,0 +1,176 @@
+#wrap {
+   width:100%;
+   #footer {
+      position: relative;
+      z-index: 1;
+      width:100%;      
+      border-top:1px solid #eee;
+
+      .row {
+         width:100%;      
+         &.row1 {
+            width:100%;
+            background: #fff;
+            .container {
+               width:100%;
+               .row1-1 {
+                  padding:30px 0;
+                  width:100%;   
+                  display: flex;                                
+                  .left  {
+                     width:50%;
+                     > ul {
+                        > li {                           
+                           &:nth-child(1){
+                              h1 {
+                                 font-size: 20px;
+                                 color: #333;
+                                 font-weight: 600;
+                                 padding: 0 0 20px 0;
+                              }
+                           }
+                           &:nth-child(2){
+                              h2 {
+                                 color: #333;
+                                 font-size: 28px;
+                                 font-weight: 700;
+                                 a {
+                                    color: #333;
+                                    letter-spacing: 1.2px;
+                                 }
+                                 span {     
+                                    margin:0 0 0 10px;                            
+                                    font-size: 16px;
+                                    color: #333;
+                                 }
+                              }
+                              
+                           }
+                           &:nth-child(3){
+                              padding:20px 0 10px 0;
+                              ul {
+                                 li {
+                                    font-size: 14px;
+                                    display: flex;
+                                    padding:7px 0;
+                                    a {
+                                       color:#333;
+                                       display: block;
+                                       width: 140px;
+                                       height: 40px;
+                                       margin:0 16px 0 0;
+                                       border:1px solid #ccc;
+                                       display: flex;
+                                       justify-content: center;
+                                       align-items: center;
+                                    }
+                                    div {
+                                       line-height: 130%;
+                                       letter-spacing: -1px;
+                                       p {
+                                          color:#999;                                          
+                                       }
+                                    }
+                                 }
+                              }
+                           }
+                           &:nth-child(4){
+                              color:#999;
+                              font-size:12px;
+                              line-height: 140%;
+                              a {
+                                 color:#999;
+                              }
+                           }
+                        }
+                     }
+                  }
+                  .right {
+                     width:50%;
+                     ul {
+                        width:100%;
+                        li {
+                           width:100%;
+                           &:nth-child(1){
+                              a {
+                                 font-size: 14px;
+                                 color:#333;
+                                 margin:0 10px 0 0;
+                                 font-weight: 600;
+                              }
+                           }
+                           &:nth-child(2){
+                              padding:30px 0 40px 0;
+                              font-size: 12px;
+                              color:#999;
+                              line-height: 150%;
+                              i {color:#ccc;margin:0 10px;}
+                              a {color:#5f0080;font-weight: 500;}
+                           }
+                           &:nth-child(3){
+                              display: flex;
+                              a {                                 
+                                 width:30px;
+                                 height:30px;
+                                 margin:0 10px 0 0;
+                                 img{
+                                    width:100%;
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+               .row1-2 {
+                  width:100%;
+                  padding:30px 0;
+                  border-top:1px solid #eee;
+                  display: flex;
+                  justify-content: space-between;
+                  a {  
+                     display: flex;                   
+                     img {
+                        height: 34px;
+                     }
+                     &:nth-child(3) {
+                        img {
+                           height: 32px; 
+                        }
+                     }
+                     span {
+                        font-size: 10px;margin:0 0 0 10px;line-height: 140%;
+                        color:#999;
+                     }
+                  }                  
+               }
+            }
+         }
+         &.row2 {
+            padding:30px 0 40px 0;
+            width:100%;            
+            background: #f7f7f7;
+            .container {
+               width: 100%;
+               text-align: center;
+               font-size: 10px;
+               color:#999;
+               div {
+                  line-height: 140%;
+               }
+               p {
+                  padding:15px 0 0 0;
+               }
+            }
+         }
+         .container {
+            width: 100%;
+            max-width: 1068px;
+            margin: 0 auto;
+            height: 100%;
+         }
+
+      }
+   
+   }
+}

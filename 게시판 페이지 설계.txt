@@ -1,0 +1,92 @@
+https://moonjong.co.kr/myadmin
+
+
+고객센터 => 공지사항
+좌측 메뉴 | 우측 공지사항
+공지사항
+자주하는질문
+1:1문의
+대량주문문의
+
+
+notice_table
+
+공지사항
+
+번호 idx
+제목 subject
+내용 contents
+작성자 writer
+작성일 wdate
+
+
+1050
+200 | 820
+
+게시판
+
+제목높이 63
+목록높이 56
+50  570  100 100
+
+- BoardComponent.jsx
+    - NociceComponent.jsx
+        -WriteComponent.jsx
+        -ListComponent.jsx
+        -ViewComponent.jsx
+        -DeleteComponent.jsx
+        -UpdateComponent.jsx
+        
+    - QustionComponent.jsx
+    - OneToOneComponent.jsx
+    - OrderComponent.jsx
+
+
+
+/////////////////////////////////////////    
+notice_table
+
+공지사항
+
+번호 idx
+제목 subject
+내용 contents
+작성자 writer
+작성일 wdate
+
+
+입력
+Create 테이블생서 입력 INSERT INTO  
+Read   조회 SELECT 
+Update 수정 Update 
+Delete 삭제 Delete
+
+컴포넌트 설계
+NoticeInsertComponent.jsx
+NoticeSelectComponent.jsx
+NoticeUpdtateComponent.jsx
+NoticeDelteComponent.jsx
+
+NoticeLeftComponent.jsx
+NoticeRightComponent.jsx
+
+820
+글쓰기 화면 설계
+좌우패딩 20
+상하 4
+
+내부너비
+780
+좌측너비 140
+우측너비 640
+
+입력상자 위아래 공간
+12
+입력상자 높이
+44
+
+
+php
+
+notice_insert.php
+notice_select.php

@@ -1,0 +1,110 @@
+#wrap {
+  width: 100%;
+}
+#wrap #borard.noticeView {
+  background: #fff;
+  width: 100%;
+  padding: 50px 0 100px 0;
+}
+#wrap #borard.noticeView .container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+#wrap #borard.noticeView .container .title {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 60px 0;
+}
+#wrap #borard.noticeView .container .title h2 {
+  font-size: 28px;
+  color: #333;
+  font-weight: 800;
+}
+#wrap #borard.noticeView .container .title h5 {
+  padding: 15px 0 0 0;
+  font-size: 14px;
+  color: #999;
+}
+#wrap #borard.noticeView .container .centent {
+  width: 100%;
+  border-top: 2px solid #333;
+}
+#wrap #borard.noticeView .container .centent > ul {
+  width: 100%;
+}
+#wrap #borard.noticeView .container .centent > ul > li {
+  width: 100%;
+}
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(1) {
+  display: flex;
+}
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(1) div {
+  font-size: 14px;
+  color: #333;
+}
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(1) div.left {
+  width: 130px;
+}
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(1) div.left ul {
+  width: 100%;
+}
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(1) div.left ul li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-weight: 500;
+  padding: 0 0 0 20px;
+  background: #f7f5f8;
+  border-bottom: 1px solid #eee;
+}
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(1) div.right {
+  width: 920px;
+}
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(1) div.right ul {
+  width: 100%;
+}
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(1) div.right ul li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 0 0 0 20px;
+  border-bottom: 1px solid #eee;
+}
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(2) div {
+  padding: 70px;
+  line-height: 170%;
+  font-size: 14px;
+}
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(3) {
+  width: 100%;
+  border-top: 1px solid #333;
+}
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(3) div.button-box {
+  padding: 20px 0 0 0;
+  width: 100%;
+  text-align: center;
+}
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(3) div.button-box a,
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(3) div.button-box button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  width: 150px;
+  border: 0;
+  background: #5f0080;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.3s;
+}
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(3) div.button-box a:hover,
+#wrap #borard.noticeView .container .centent > ul > li:nth-child(3) div.button-box button:hover {
+  opacity: 0.8;
+}
